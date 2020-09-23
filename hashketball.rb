@@ -177,9 +177,7 @@ end
 
 #hashketball #player_stats returns all stats for a given player
 def player_stats(name)
-        game_hash[:home][:players].include?(name)
-          game_hash[:home][:players]
+      if game_hash[:home][:players].include?(name)
+          return game_hash[:home][:players]
       end
-    end
-  end
 end
